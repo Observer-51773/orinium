@@ -2,11 +2,12 @@
 
 /// InfoNode represents a node in the layout tree.
 /// It can be either a Container or Text node, each with its own properties and styles.
-#[derive(Debug, Clone)]
 pub struct InfoNode {
-    pub kind: NodeKind,
+    pub id: Option<String>, // Должно быть здесь
+    pub kind: InfoKind,
     pub children: Vec<InfoNode>,
 }
+
 
 /// Role of Container
 ///
